@@ -9,7 +9,7 @@ import java.util.Collections;
 public class Day01Part1AoC {
     private String input;
     private String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day01\\inputDay01Part1.txt";
-    private ArrayList elves;
+    private ArrayList<Integer> elves;
 
     void inputsFromFile() {//Thank you Brendan :)
 
@@ -34,12 +34,12 @@ public class Day01Part1AoC {
         inputsFromFile();
     }
 
-    public int run() {
+    public void run() {
         inputsFromFile();
         Day01Part1AoC p1 =new Day01Part1AoC();
         String inputs = p1.getInput();
         String[] line = inputs.split("\n");
-        ArrayList<Integer> elves = new ArrayList<>();
+        elves = new ArrayList<>();
 
         int calories = 0;
         for (String str: line){
@@ -51,7 +51,9 @@ public class Day01Part1AoC {
             calories += Integer.parseInt(str);
         }
         elves.sort(Collections.reverseOrder());
-        return elves.get(0);
+        int total = 0;
+        total = elves.get(0) + elves.get(1) + elves.get(2);
+        System.out.printf("Elf 1: %d\nElf 2: %d\nElf 3: %d\nTotal calories: %d",elves.get(0), elves.get(1),elves.get(2),total);
     }
 }
  
