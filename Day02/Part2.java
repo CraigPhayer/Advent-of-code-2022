@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Day02AoCPart1 {
+public class Part2 {
     String input;
     String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day02\\input.txt";
     private static final int draw = 3;
@@ -16,32 +16,33 @@ public class Day02AoCPart1 {
     //A - ROCK
     //B - PAPER
     //C - SCISSORS
-    //X - ROCK
-    //Y - PAPER
-    //Z - SCISSORS
+    //X - LOSE
+    //Y - DRAW
+    //Z - WIN
     private static final Map<String,Integer> Game = Map.of(
-            "A Y",win+paper,
-            "A X",draw+rock,
-            "A Z",loss+scissors,
+            "A Y",draw+rock,
+            "A X",loss+scissors,
+            "A Z",win+paper,
             "B X",loss+rock,
             "B Y",draw+paper,
             "B Z",win+scissors,
-            "C X",win+rock,
-            "C Y",loss+paper,
-            "C Z",draw+scissors
+            "C X",loss+paper,
+            "C Y",draw+scissors,
+            "C Z",win+rock
     );
     private int score = 0;
 
     public int getScore() {
         return score;
     }
+
     public void run() throws FileNotFoundException {
         File file = new File(path);
         Scanner sc = new Scanner(file);
         while (sc.hasNextLine()) {
             String lines = sc.nextLine();
             score += Game.get(lines);
-            }
+        }
         sc.close();
     }
 }

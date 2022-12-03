@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Day01AoC {
+public class Part1and2 {
     private String input;
     private String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day01\\inputDay01Part1.txt";
     private ArrayList<Integer> elves;
@@ -30,13 +30,13 @@ public class Day01AoC {
         return input;
     }
 
-    public Day01AoC() {
+    public Part1and2() {
         inputsFromFile();
     }
 
     public void run() {
         inputsFromFile();
-        Day01AoC p1 =new Day01AoC();
+        Part1and2 p1 = new Part1and2();
         String inputs = p1.getInput();
         String[] line = inputs.split("\n");
         elves = new ArrayList<>();

@@ -2,7 +2,7 @@ package Day01;
 
 public class Main {
     public static void main(String[] args) {
-        Day01AoC d1 = new Day01AoC();
+        Part1and2 d1 = new Part1and2();
         d1.run();
     }
 }
