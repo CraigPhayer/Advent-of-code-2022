@@ -9,14 +9,9 @@ import java.util.List;
 public class Part1 {
 
     String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day03\\input.txt";
-    ArrayList<String> letters;
     char common;
     int score = 0;
     int temp = 0;
-
-    public Part1() {
-        letters = new ArrayList<>();
-    }
 
     public void run() throws IOException {
         List<String> input = Files.readAllLines(Path.of(path));
