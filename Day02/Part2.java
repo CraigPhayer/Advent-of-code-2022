@@ -19,16 +19,16 @@ public class Part2 {
     //X - LOSE
     //Y - DRAW
     //Z - WIN
-    private static final Map<String,Integer> Game = Map.of(
-            "A Y",draw+rock,
-            "A X",loss+scissors,
-            "A Z",win+paper,
-            "B X",loss+rock,
-            "B Y",draw+paper,
-            "B Z",win+scissors,
-            "C X",loss+paper,
-            "C Y",draw+scissors,
-            "C Z",win+rock
+    private static final Map<String, Integer> Game = Map.of(
+            "A Y", draw + rock,
+            "A X", loss + scissors,
+            "A Z", win + paper,
+            "B X", loss + rock,
+            "B Y", draw + paper,
+            "B Z", win + scissors,
+            "C X", loss + paper,
+            "C Y", draw + scissors,
+            "C Z", win + rock
     );
     private int score = 0;
 

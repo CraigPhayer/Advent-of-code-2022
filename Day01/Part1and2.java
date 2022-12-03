@@ -42,8 +42,8 @@ public class Part1and2 {
         elves = new ArrayList<>();
 
         int calories = 0;
-        for (String str: line){
-            if (str.equals("")){
+        for (String str : line) {
+            if (str.equals("")) {
                 elves.add(calories);
                 calories = 0;
                 continue;
@@ -53,7 +53,7 @@ public class Part1and2 {
         elves.sort(Collections.reverseOrder());
         int total = 0;
         total = elves.get(0) + elves.get(1) + elves.get(2);
-        System.out.printf("Elf 1: %d\nElf 2: %d\nElf 3: %d\nTotal calories: %d",elves.get(0), elves.get(1),elves.get(2),total);
+        System.out.printf("Elf 1: %d\nElf 2: %d\nElf 3: %d\nTotal calories: %d", elves.get(0), elves.get(1), elves.get(2), total);
     }
 }
  
