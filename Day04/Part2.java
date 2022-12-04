@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Part1 {
+public class Part2 {
     int counter;
     String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day04\\input.txt";
 
@@ -32,8 +32,10 @@ public class Part1 {
         String[] pair2 = lines[1].split("-");
         int no3 = Integer.parseInt(pair2[0]);
         int no4 = Integer.parseInt(pair2[1]);
-        if (no1 >= no3 && no2 <= no4) {
-            return true;
-        } else return no3 >= no1 && no4 <= no2;
+        return no1 >= no3 && no1 <= no4 ||
+                no2 >= no3 && no2 <= no4 ||
+                no3 >= no1 && no3 <= no1 ||
+                no4 >= no1 && no4 <= no2;
     }
 }
+

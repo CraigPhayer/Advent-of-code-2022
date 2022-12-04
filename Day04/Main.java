@@ -8,6 +8,6 @@ public class Main {
         Part2 p2 = new Part2();
         p2.run();
         p1.run();
-        System.out.printf("Part 1: %d\nPart 2: %d",p1.getCounter(),p2.getCounter());
+        System.out.printf("Part 1: %d\nPart 2: %d", p1.getCounter(), p2.getCounter());
     }
 }
