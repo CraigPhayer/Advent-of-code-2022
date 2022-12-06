@@ -10,6 +10,8 @@ public class Part1and2 {
     private String input;
     private String path = "C:\\Users\\sophi\\OneDrive - University of Limerick\\Advent of code\\Day01\\inputDay01Part1.txt";
     private ArrayList<Integer> elves;
+    int part2;
+    int part1;
 
     void inputsFromFile() {//Thank you Brendan :)
 
@@ -28,6 +30,14 @@ public class Part1and2 {
 
     public String getInput() {
         return input;
+    }
+
+    public int getPart2() {
+        return part2;
+    }
+
+    public int getPart1() {
+        return part1;
     }
 
     public Part1and2() {
@@ -51,9 +61,9 @@ public class Part1and2 {
             calories += Integer.parseInt(str);
         }
         elves.sort(Collections.reverseOrder());
-        int total = 0;
-        total = elves.get(0) + elves.get(1) + elves.get(2);
-        System.out.printf("Elf 1: %d\nElf 2: %d\nElf 3: %d\nTotal calories: %d", elves.get(0), elves.get(1), elves.get(2), total);
+
+        part2 = elves.get(0) + elves.get(1) + elves.get(2);
+        part1 = elves.get(0);
     }
 }
  
