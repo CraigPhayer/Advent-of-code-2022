@@ -19,6 +19,7 @@ public class adventOfCode2022 {
         Day06.Part1and2 day6Part1 = new Day06.Part1and2();
         Day06.Part1and2 day6Part2 = new Day06.Part1and2();
         Day07.Part1and2 day7 = new Day07.Part1and2();
+        Day08.Part1and2 p1 = new Day08.Part1and2();
 
         day6Part1.setLength(4);
         day6Part2.setLength(14);
@@ -44,5 +45,6 @@ public class adventOfCode2022 {
         System.out.printf("DAY 5:\nPart 1: %s\nPart 2: %s\n%s\n",day5Part1.getAnswer(),day5Part2.getAnswer(),separate.repeat(50));
         System.out.printf("DAY 6:\nPart 1: %d\nPart 2: %d\n%s\n",day6Part1.getPosition(),day6Part2.getPosition(),separate.repeat(50));
         System.out.printf("DAY 7:\nPart 1: %d\nPart 2: %d\n%s\n",day7.getPart1(),day7.getPart2(),separate.repeat(50));
+        System.out.printf("DAY 8:\nPart 1: %d\nPart 2: %d\n%s\n",p1.p1(),p1.p2(),separate.repeat(50));
     }
 }
